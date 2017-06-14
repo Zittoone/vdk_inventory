@@ -176,7 +176,7 @@ end
 ------------------------- EXPORTS METHODS -------------------------
 
 function getQuantity(itemId)
-    return ITEMS[tonumber(itemId)].quantity
+    return ITEMS[tonumber(itemId)].quantity or 0
 end
 
 function getPods()
